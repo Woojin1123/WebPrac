@@ -239,6 +239,7 @@
         font-size: 1500px;
       }
     </style>
+    <script src="/apikey.js"></script>
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
       import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
@@ -247,16 +248,6 @@
         addDoc,
       } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
       import { getDocs } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-
-      const firebaseConfig = {
-        apiKey: "AIzaSyDZOWKTJ30Jca1Lht4dnoSxdF0RFOvLbZU",
-        authDomain: "sparta-5d3ae.firebaseapp.com",
-        projectId: "sparta-5d3ae",
-        storageBucket: "sparta-5d3ae.appspot.com",
-        messagingSenderId: "811761844665",
-        appId: "1:811761844665:web:c713a9c6b791906ff57668",
-        measurementId: "G-C9X0M8Q4MD",
-      };
 
       const app = initializeApp(firebaseConfig);
       const db = getFirestore(app);
